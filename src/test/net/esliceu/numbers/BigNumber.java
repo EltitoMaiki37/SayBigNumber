@@ -1,8 +1,8 @@
 package net.esliceu.numbers;
 
+import static org.junit.Assert.assertEquals;
 
-
-public class BigNumber implements BigNumberOperator {
+public class BigNumber {
     String numero;
     // Constructor 1
     public BigNumber(String s) {
