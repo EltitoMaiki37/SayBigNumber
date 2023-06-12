@@ -49,11 +49,12 @@ La construcción del proyecto debe seguir una pipeline que incluya las siguiente
 
 1. **Build**: Compilación del código fuente y generación del artefacto.
 2. **Unit tests**: Ejecución de pruebas unitarias para validar el comportamiento del código.
-3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código.
+3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código. 
+![Imagen local](./img/sonar.png)
 4. **Deploy**: Despliegue del artefacto generado en un entorno local y en el entorno de Es Liceu.
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
 6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
-
-
 ![Imagen local](./img/postman.png)
-![Imagen local](./img/sonar.png)
+
+
+
