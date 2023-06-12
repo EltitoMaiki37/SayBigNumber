@@ -20,6 +20,7 @@ public class BigNumber implements BigNumberOperator {
         }
         this.numero = s;
     }
+
     // Suma
     public BigNumber add(BigNumber other) {
         String numero1 = this.numero;
