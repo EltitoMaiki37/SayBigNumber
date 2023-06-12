@@ -53,3 +53,7 @@ La construcción del proyecto debe seguir una pipeline que incluya las siguiente
 4. **Deploy**: Despliegue del artefacto generado en un entorno local y en el entorno de Es Liceu.
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
 6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
+
+
+![Imagen local](./img/postman.png)
+![Imagen local](./img/sonar.png)
