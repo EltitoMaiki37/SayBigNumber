@@ -50,11 +50,11 @@ A continuación, se muestran los diagramas UML necesarios para comprender el fun
 
 La construcción del proyecto debe seguir una pipeline que incluya las siguientes etapas:
 
-1. **Build**: El código tiene una clase llamada BigNumber que sirve para trabajar con números enteros. Esta clase ofrece varias operaciones matemáticas como sumar, restar, multiplicar, dividir, obtener la raíz cuadrada, elevar a una potencia, calcular el factorial y encontrar el máximo común divisor (MCD).
+1. **Build**: El código tiene una clase llamada BigNumber que sirve para trabajar con números. Esta clase puede hacer operaciones matemáticas como sumar, restar, multiplicar.
 
-El código maneja los números como cadenas de texto y se encarga de eliminar los ceros innecesarios al principio de los números. No hay límites específicos establecidos en el código, pero el rendimiento y los límites prácticos dependerán de la memoria y el tiempo de ejecución disponibles en el entorno en el que se ejecute el código. Es importante tener en cuenta que trabajar con números muy grandes puede requerir una gran cantidad de memoria y tiempo de ejecución.
+El código maneja los números como cadenas de texto y se encarga de eliminar los ceros innecesarios al principio de los números. No hay límites específicos establecidos en el código.
 
-2. **Unit tests**: El código que te proporcionaron es una especie de prueba para una clase llamada BigNumber. Esta clase parece ser una manera de trabajar con números muy grandes que son más grandes de lo que los tipos de datos normales pueden manejar. La prueba unitaria comprueba diferentes aspectos de la clase BigNumber, como comparaciones, sumas y multiplicaciones.
+2. **Unit tests**: El código es una especie de prueba para una clase llamada BigNumber. Esta clase parece ser una manera de trabajar con números muy grandes que son más grandes de lo que los tipos de datos normales pueden manejar. La prueba unitaria comprueba diferentes aspectos de la clase BigNumber, como comparaciones, sumas y multiplicaciones.
 
 - El método comparaciones() verifica si diferentes instancias de BigNumber son iguales, mayores o menores usando el método compareTo().
 - El método sumas() verifica la suma de diferentes instancias de BigNumber usando el método add(), y comprueba si el resultado es el esperado.
