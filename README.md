@@ -75,7 +75,7 @@ Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez
 
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
 ![Imagen local](./img/postman.png)
-6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
+6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp. Como se puede ver hasta donde es capaz de llegar nuestro codigo en temas de funcionalidad.
 ![Imagen local](./img/test2e2.png)
 
 
