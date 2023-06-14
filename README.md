@@ -40,10 +40,10 @@ La salida de la aplicación se encuentra en `<TOMCAT_HOME>/logs/catalina.out`. P
 ## Diagramas
 A continuación, se muestran los diagramas UML necesarios para comprender el funcionamiento del proyecto:
 
-- Diagrama de comunicación
+- Diagrama de comunicación.
 ![Imagen local](./img/comunicacion.png)
 
-- Diagrama de casos de uso
+- Diagrama de casos de uso.
 ![Imagen local](./img/use.png)
 
 - Diagrama de secuencia
