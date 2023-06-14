@@ -6,72 +6,96 @@
 </head>
 <body>
   <h1>Say Big Numbers</h1>
-  <p>Permite convertir números en su representación textual y realizar operaciones matemáticas con números grandes.</p>
-  
-  <h2>Configuración del entorno local</h2>
-  <p>Para configurar el entorno local, sigue los siguientes pasos:</p>
+  <h2>Permite convertir números en su representación textual y realizar operaciones matemáticas con números grandes.</h2>
+  <h3>Configuración del entorno local</h3>
+  <p>Para configurar el entorno local:</p>
   <ol>
-    <li>Instala <strong>Apache Tomcat 9</strong> siguiendo las instrucciones en <a href="https://tomcat.apache.org/download-90.cgi">https://tomcat.apache.org/download-90.cgi</a>.</li>
-    <li>Verifica que puedas iniciar <strong>Apache Tomcat</strong> localmente. Por defecto, se ejecuta en el puerto 8080. Puedes acceder a la página de administración en <a href="http://localhost:8080/manager/html">http://localhost:8080/manager/html</a>.</li>
+    <li>Instalamos <strong>Apache Tomcat 9</strong> siguiendo las instrucciones en <a href="https://tomcat.apache.org/download-90.cgi">https://tomcat.apache.org/download-90.cgi</a>.</li>
+    <li>Verificamos que puedas iniciar <strong>Apache Tomcat</strong> localmente. Por defecto, se ejecuta en el puerto
+      8080. Puedes acceder a la página de administración en <a href="http://localhost:8080/manager/html">http://localhost:8080/manager/html</a>.</li>
   </ol>
-  
-  <h2>Configuración de la webapp</h2>
+  <h3>Configuración de la webapp</h3>
   <ol>
-    <li>Descarga el proyecto <code>SayBigNumber.zip</code>.</li>
-    <li>Descomprime el archivo ZIP y ábrelo en <strong>IntelliJ</strong> o tu IDE preferido.</li>
-    <li>En el proyecto, agrega la clase <code>NumbersCat</code> y haz que implemente la interfaz <code>Numbers</code>.</li>
-    <li>Agrega la clase <code>BigNumber</code> al proyecto y haz que implemente la interfaz <code>BigNumberOperator</code>.</li>
-    <li>Modifica la clase <code>SayBigNumberFactory</code> para utilizar tus objetos implementados.</li>
-    <li>Si tienes asignado un servidor en <strong>Es Liceu</strong>, el profesor te proporcionará un endpoint. Configura este endpoint en la clase <code>SayBigNumberFactory</code> (por defecto, está configurado para apuntar a la instancia local).</li>
+    <li>Descargamos el proyecto <code>SayBigNumber.zip</code>.</li>
+    <li>Descomprimimos el archivo ZIP y lo abrimos en <strong>IntelliJ</strong>.</li>
+    <li>En el proyecto, agregamos la clase <code>NumbersCat</code> y implementamos la interfaz <code>Numbers</code>.</li>
+    <li>Agregamos la clase <code>BigNumber</code> al proyecto con la interfaz de <code>BigNumberOperator</code>.</li>
+    <li>Modificamos la clase <code>SayBigNumberFactory</code> para utilizar tus objetos implementados.</li>
+    <li>Configuramos este endpoint en la clase <code>SayBigNumberFactory</code> (por defecto, está configurado para apuntar al local).</li>
   </ol>
-  
-  <h2>Servicios de la webapp</h2>
+  <h3>Servicios de la webapp</h3>
   <p>La webapp ofrece los siguientes servicios:</p>
   <ul>
-    <li><code>say</code>: Convierte un número en su representación textual. Ejemplo de uso: <a href="http://localhost:8080/SayBigNumber/say?number=71">http://localhost:8080/SayBigNumber/say?number=71</a></li>
-    <li><code>operate</code>: Realiza una operación matemática con dos números. Ejemplo de uso: <a href="http://localhost:8080/SayBigNumber/operate?operation=add&number1=13&number2=57">http://localhost:8080/SayBigNumber/operate?operation=add&number1=13&number2=57</a></li>
-    <li><code>service</code>: Realiza una operación matemática con dos números y devuelve el resultado en formato JSON. Ejemplo de uso: <a href="http://localhost:8080/SayBigNumber/service?operation=add&number1=13&number2=5">http://localhost:8080/SayBigNumber/service?operation=add&number1=13&number2=5</a></li>
+    <li><code>say</code>: Convierte un número en su representación textual. Ejemplo de uso: <a
+        href="http://localhost:8080/SayBigNumber/say?number=71">http://localhost:8080/SayBigNumber/say?number=71</a></li>
+    <li><code>operate</code>: Realiza una operación matemática con dos números. Ejemplo de uso: <a
+        href="http://localhost:8080/SayBigNumber/operate?operation=add&number1=13&number2=57">http://localhost:8080/SayBigNumber/operate?operation=add&number1=13&number2=57</a></li>
+    <li><code>service</code>: Realiza una operación matemática con dos números y devuelve el resultado en formato JSON.
+      Ejemplo de uso: <a href="http://localhost:8080/SayBigNumber/service?operation=add&number1=13&number2=5">http://localhost:8080/SayBigNumber/service?operation=add&number1=13&number2=5</a></li>
   </ul>
-  
-  <h2>Comprobación de los logs</h2>
-  <p>La salida de la aplicación se encuentra en <code>&lt;TOMCAT_HOME&gt;/logs/catalina.out</code>. Puedes usar la herramienta <code>tail</code> para ver los logs en la pantalla:</p>
-  <pre>&lt;TOMCAT_HOME&gt;/logs $ tail -f catalina.out</pre>
+  <h3>Comprobación de los logs</h3>
+  <p>La salida de la aplicación se encuentra en <code>&lt;TOMCAT_HOME&gt;/logs/catalina.out</code>. Usamos la herramienta <code>tail</code> para ver los logs en la pantalla:</p>
+  <pre>
+    &lt;TOMCAT_HOME&gt;/logs $ tail -f catalina.out
+  </pre>
   <img src="./img/logs.png" alt="Imagen local">
-  
-  <h2>Diagramas</h2>
+  <h3>Diagramas</h3>
   <p>A continuación, se muestran los diagramas UML necesarios para comprender el funcionamiento del proyecto:</p>
   <ul>
-    <li>Diagrama de comunicación</li>
-    <li>Diagrama de casos de uso</li>
-    <li>Diagrama de secuencia</li>
-    <li>Diagrama de flujo</li>
-    <li>Diagrama de clases</li>
+    <li>Diagrama de comunicación.</li>
   </ul>
-  
-  <h2>Pipeline</h2>
+  <img src="./img/comunicacion.png" alt="Imagen local">
+  <ul>
+    <li>Diagrama de casos de uso.</li>
+  </ul>
+  <img src="./img/use.png" alt="Imagen local">
+  <ul>
+    <li>Diagrama de secuencia.</li>
+  </ul>
+  <img src="./img/sequencia.png" alt="Imagen local">
+  <ul>
+    <li>Diagrama de flujo.</li>
+  </ul>
+  <img src="./img/flujo.png" alt="Imagen local">
+  <h3>Pipeline</h3>
   <p>La construcción del proyecto debe seguir una pipeline que incluya las siguientes etapas:</p>
   <ol>
-    <li><strong>Build</strong>: Compilación del código fuente y generación del artefacto.</li>
-    <li><strong>Unit tests</strong>: Ejecución de pruebas unitarias para validar el comportamiento del código.</li>
-    <li><strong>SonarQube</strong>: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código.</li>
-    <img src="./img/sonar.png" alt="Imagen local">
-    <li><strong>Deploy</strong>: Asegúrate de que la práctica esté completa y que pase los tests en IntelliJ. Esto implica que has implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.</li>
-    <li>Abre el archivo "saybinumbersfactory" en tu editor de código y realiza las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers cat.</li>
-    <li>Descarga Apache Maven desde el sitio web oficial de Apache Maven <a href="https://maven.apache.org">https://maven.apache.org</a> siguiendo las instrucciones correspondientes a tu sistema operativo. Esto generalmente implica descargar el archivo binario de Maven y descomprimirlo en una ubicación deseada en tu computadora.</li>
-    <li>Configura las variables de entorno del sistema para que apunten al directorio de Maven descomprimido. Asegúrate de agregar la ruta al ejecutable de Maven (generalmente llamado "mvn") a la variable PATH. Esto permitirá que puedas ejecutar comandos de Maven desde cualquier ubicación en la línea de comandos.</li>
-    <li>Una vez que hayas terminado de editar el código y Maven esté correctamente configurado, realiza el empaquetado del proyecto utilizando Maven:</li>
-    <ol>
-      <li>Abre una terminal o línea de comandos en el directorio raíz de tu proyecto, donde se encuentra el archivo "pom.xml".</li>
-      <li>Ejecuta el comando <code>mvn package</code>. Esto iniciará el proceso de empaquetado definido en el archivo "pom.xml".</li>
-      <li>Maven compilará tu proyecto, ejecutará los tests, generará los archivos de distribución y construirá el archivo WAR para tu proyecto.</li>
-      <li>Una vez que el comando se haya completado sin errores, encontrarás el archivo WAR en el directorio "target" de tu proyecto.</li>
-    </ol>
-    <li>Copia el archivo WAR generado y pégalo en la carpeta "webapps" del directorio de instalación de Apache Tomcat.</li>
-    <li>Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez que Tomcat se haya reiniciado ya estará disponible.</li>
-    <li><strong>API tests</strong>: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.</li>
-    <img src="./img/postman.png" alt="Imagen local">
-    <li><strong>E2E tests</strong>: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp. Como se puede ver hasta donde es capaz de llegar nuestro código en temas de funcionalidad.</li>
-    <img src="./img/test2e2.png" alt="Imagen local">
+    <li><strong>Build</strong>: El código tiene una clase llamada BigNumber que sirve para trabajar con números. Esta clase puede hacer operaciones matemáticas de sumar en nuestro caso.</li>
   </ol>
+  <p>El código maneja los números como cadenas de texto y se encarga de eliminar los ceros innecesarios al principio de los números. No hay límites específicos establecidos en el código.</p>
+  <ol start="2">
+    <li><strong>Unit tests</strong>: El código es una especie de prueba para una clase llamada BigNumber. Esta clase parece ser una manera de trabajar con números muy grandes que son más grandes de lo que los tipos de datos normales pueden manejar. La prueba unitaria comprueba diferentes aspectos de la clase BigNumber, como comparaciones, sumas y multiplicaciones.</li>
+  </ol>
+  <ul>
+    <li>El método comparaciones() verifica si diferentes instancias de BigNumber son iguales, mayores o menores usando el método compareTo().</li>
+    <li>El método sumas() verifica la suma de diferentes instancias de BigNumber usando el método add(), y comprueba si el resultado es el esperado.</li>
+  </ul>
+  <ol start="3">
+    <li><strong>SonarQube</strong>: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código.</li>
+  </ol>
+  <img src="./img/sonar.png" alt="Imagen local">
+  <ol start="4">
+    <li><strong>Deploy</strong>: Cuando tenemos la práctica completa y que pase los tests en IntelliJ. Implicará que se ha implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.</li>
+  </ol>
+  <p>Abrimos el archivo "saybinumbersfactory" en el editor de código y se realizan las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers cat.</p>
+  <p>Descargamos Apache Maven desde el sitio web oficial de Apache Maven <a href="https://maven.apache.org">https://maven.apache.org</a>. Esto generalmente implica descargar el archivo binario de Maven y descomprimirlo en una ubicación deseada en tu ordenador.</p>
+  <p>Configuramos las variables de entorno del sistema para que apunten al directorio de Maven descomprimido. Al agregar la ruta al ejecutable de Maven ("mvn") a la variable PATH. Permitirá que se pueda ejecutar comandos de Maven desde cualquier ubicación en la línea de comandos.</p>
+  <p>Una vez terminado de editar el código y Maven esté correctamente configurado, realizamos el empaquetado del proyecto utilizando Maven:</p>
+  <ol>
+    <li>Abrimos una terminal o línea de comandos en el directorio raíz del proyecto, donde se encuentra el archivo "pom.xml".</li>
+    <li>Ejecutamos el comando <code>mvn package</code>. Esto iniciará el proceso de empaquetado definido en el archivo "pom.xml".</li>
+    <li>Maven compilará tu proyecto, ejecutará los tests, generará los archivos de distribución y construirá el archivo WAR.</li>
+    <li>Una vez que el comando se haya completado sin errores, estará el archivo WAR en el directorio "target".</li>
+  </ol>
+  <p>Copiamos el archivo WAR generado y lo pegamos en la carpeta "webapps" del directorio de instalación de Apache Tomcat.</p>
+  <p>Reiniciamos el servidor Tomcat para que cargue y despliegue la aplicación. Una vez que Tomcat se haya reiniciado ya estará disponible.</p>
+  <ol start="5">
+    <li><strong>API tests</strong>: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.</li>
+  </ol>
+  <img src="./img/postman.png" alt="Imagen local">
+  <ol start="6">
+    <li><strong>E2E tests</strong>: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp. Como se puede ver hasta donde es capaz de llegar nuestro codigo en temas de funcionalidad.</li>
+  </ol>
+  <img src="./img/test2e2.png" alt="Imagen local">
 </body>
 </html>
