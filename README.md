@@ -54,7 +54,7 @@ A continuación, se muestran los diagramas UML necesarios para comprender el fun
 
 - Diagrama de flujo.
 
-![Imagen local](./img/)
+![Imagen local](./img/flujo.png)
 
 - Diagrama de clases.
 
