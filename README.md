@@ -45,15 +45,19 @@ A continuación, se muestran los diagramas UML necesarios para comprender el fun
 ![Imagen local](./img/comunicacion.png)
 
 - Diagrama de casos de uso.
+
 ![Imagen local](./img/use.png)
 
-- Diagrama de secuencia
+- Diagrama de secuencia.
+
 ![Imagen local](./img/)
 
-- Diagrama de flujo
+- Diagrama de flujo.
+
 ![Imagen local](./img/)
 
-- Diagrama de clases
+- Diagrama de clases.
+
 ![Imagen local](./img/)
 
 
