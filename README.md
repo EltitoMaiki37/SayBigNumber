@@ -53,7 +53,7 @@ La construcción del proyecto debe seguir una pipeline que incluya las siguiente
 ![Imagen local](./img/sonar.png)
 4. **Deploy**: Asegúrate de que la práctica esté completa y que pase los tests en IntelliJ. Esto implica que has implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.
 
-Abre el archivo "saybinumbersfactory" en tu editor de código y realiza las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers car. Esto puede implicar agregar nuevas funciones, modificar las existentes o importar bibliotecas relevantes para trabajar con estos tipos de datos.
+Abre el archivo "saybinumbersfactory" en tu editor de código y realiza las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers cat. 
 
 Descarga Apache Maven desde el sitio web oficial de Apache Maven [https://maven.apache.org](https://maven.apache.org) siguiendo las instrucciones correspondientes a tu sistema operativo. Esto generalmente implica descargar el archivo binario de Maven y descomprimirlo en una ubicación deseada en tu computadora.
 
@@ -68,7 +68,7 @@ Una vez que hayas terminado de editar el código y Maven esté correctamente con
 
 Copia el archivo WAR generado y pégalo en la carpeta "webapps" del directorio de instalación de Apache Tomcat.
 
-Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez que Tomcat se haya reiniciado, tu aplicación estará disponible en la ruta correspondiente, que generalmente es algo como [http://localhost:8080/sayBigNumbers](http://localhost:8080/sayBigNumbers).
+Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez que Tomcat se haya reiniciado ya estará disponible
 
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
 6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
