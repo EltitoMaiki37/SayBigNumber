@@ -51,7 +51,25 @@ La construcción del proyecto debe seguir una pipeline que incluya las siguiente
 2. **Unit tests**: Ejecución de pruebas unitarias para validar el comportamiento del código.
 3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código. 
 ![Imagen local](./img/sonar.png)
-4. **Deploy**: Despliegue del artefacto generado en un entorno local y en el entorno de Es Liceu.
+4. **Deploy**: Asegúrate de que la práctica esté completa y que pase los tests en IntelliJ. Esto implica que has implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.
+
+Abre el archivo "saybinumbersfactory" en tu editor de código y realiza las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers car. Esto puede implicar agregar nuevas funciones, modificar las existentes o importar bibliotecas relevantes para trabajar con estos tipos de datos.
+
+Descarga Apache Maven desde el sitio web oficial de Apache Maven [https://maven.apache.org](https://maven.apache.org) siguiendo las instrucciones correspondientes a tu sistema operativo. Esto generalmente implica descargar el archivo binario de Maven y descomprimirlo en una ubicación deseada en tu computadora.
+
+Configura las variables de entorno del sistema para que apunten al directorio de Maven descomprimido. Asegúrate de agregar la ruta al ejecutable de Maven (generalmente llamado "mvn") a la variable PATH. Esto permitirá que puedas ejecutar comandos de Maven desde cualquier ubicación en la línea de comandos.
+
+Una vez que hayas terminado de editar el código y Maven esté correctamente configurado, realiza el empaquetado del proyecto utilizando Maven:
+
+1. Abre una terminal o línea de comandos en el directorio raíz de tu proyecto, donde se encuentra el archivo "pom.xml".
+2. Ejecuta el comando `mvn package`. Esto iniciará el proceso de empaquetado definido en el archivo "pom.xml".
+3. Maven compilará tu proyecto, ejecutará los tests, generará los archivos de distribución y construirá el archivo WAR para tu proyecto.
+4. Una vez que el comando se haya completado sin errores, encontrarás el archivo WAR en el directorio "target" de tu proyecto.
+
+Copia el archivo WAR generado y pégalo en la carpeta "webapps" del directorio de instalación de Apache Tomcat.
+
+Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez que Tomcat se haya reiniciado, tu aplicación estará disponible en la ruta correspondiente, que generalmente es algo como [http://localhost:8080/sayBigNumbers](http://localhost:8080/sayBigNumbers).
+
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
 6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
 ![Imagen local](./img/postman.png)
