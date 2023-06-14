@@ -58,7 +58,6 @@ El código maneja los números como cadenas de texto y se encarga de eliminar lo
 
 - El método comparaciones() verifica si diferentes instancias de BigNumber son iguales, mayores o menores usando el método compareTo().
 - El método sumas() verifica la suma de diferentes instancias de BigNumber usando el método add(), y comprueba si el resultado es el esperado.
-- Los métodos restes(), multiplicacions(), divisions(), arrels() y potencies() están comentados en el código y actualmente no se están ejecutando. Es probable que contengan pruebas para las operaciones de resta, multiplicación, división, raíz cuadrada y potencia, respectivamente.
 
 3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código. 
 ![Imagen local](./img/sonar.png)
