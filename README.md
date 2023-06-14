@@ -34,7 +34,7 @@ La salida de la aplicación se encuentra en `<TOMCAT_HOME>/logs/catalina.out`. P
 <TOMCAT_HOME>/logs $ tail -f catalina.out 
 ```
 
-![Imagen local](./img/logs.png){:height="300px" width="500px"}
+![Imagen local](./img/logs.png)
 
 
 ## Diagramas
@@ -53,7 +53,7 @@ La construcción del proyecto debe seguir una pipeline que incluya las siguiente
 1. **Build**: Compilación del código fuente y generación del artefacto.
 2. **Unit tests**: Ejecución de pruebas unitarias para validar el comportamiento del código.
 3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código. 
-![Imagen local](./img/sonar.png){:height="300px" width="500px"}
+![Imagen local](./img/sonar.png)
 4. **Deploy**: Asegúrate de que la práctica esté completa y que pase los tests en IntelliJ. Esto implica que has implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.
 
 Abre el archivo "saybinumbersfactory" en tu editor de código y realiza las modificaciones necesarias para que pueda obtener las prácticas relacionadas con big numbers y numbers cat. 
@@ -74,9 +74,9 @@ Copia el archivo WAR generado y pégalo en la carpeta "webapps" del directorio d
 Reinicia el servidor Tomcat para que cargue y despliegue tu aplicación. Una vez que Tomcat se haya reiniciado ya estará disponible
 
 5. **API tests**: Ejecución de pruebas automatizadas para verificar el funcionamiento de los servicios de la webapp.
-![Imagen local](./img/postman.png){:height="300px" width="500px"}
+![Imagen local](./img/postman.png)
 6. **E2E tests**: Ejecución de pruebas de extremo a extremo para verificar la funcionalidad completa de la webapp.
-![Imagen local](./img/test2e2.png){:height="300px" width="500px"}
+![Imagen local](./img/test2e2.png)
 
 
 
