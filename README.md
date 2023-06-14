@@ -50,8 +50,16 @@ A continuación, se muestran los diagramas UML necesarios para comprender el fun
 
 La construcción del proyecto debe seguir una pipeline que incluya las siguientes etapas:
 
-1. **Build**: Compilación del código fuente y generación del artefacto.
-2. **Unit tests**: Ejecución de pruebas unitarias para validar el comportamiento del código.
+1. **Build**: El código tiene una clase llamada BigNumber que sirve para trabajar con números enteros. Esta clase ofrece varias operaciones matemáticas como sumar, restar, multiplicar, dividir, obtener la raíz cuadrada, elevar a una potencia, calcular el factorial y encontrar el máximo común divisor (MCD).
+
+El código maneja los números como cadenas de texto y se encarga de eliminar los ceros innecesarios al principio de los números. No hay límites específicos establecidos en el código, pero el rendimiento y los límites prácticos dependerán de la memoria y el tiempo de ejecución disponibles en el entorno en el que se ejecute el código. Es importante tener en cuenta que trabajar con números muy grandes puede requerir una gran cantidad de memoria y tiempo de ejecución.
+
+2. **Unit tests**: El código que te proporcionaron es una especie de prueba para una clase llamada BigNumber. Esta clase parece ser una manera de trabajar con números muy grandes que son más grandes de lo que los tipos de datos normales pueden manejar. La prueba unitaria comprueba diferentes aspectos de la clase BigNumber, como comparaciones, sumas y multiplicaciones.
+
+- El método comparaciones() verifica si diferentes instancias de BigNumber son iguales, mayores o menores usando el método compareTo().
+- El método sumas() verifica la suma de diferentes instancias de BigNumber usando el método add(), y comprueba si el resultado es el esperado.
+- Los métodos restes(), multiplicacions(), divisions(), arrels() y potencies() están comentados en el código y actualmente no se están ejecutando. Es probable que contengan pruebas para las operaciones de resta, multiplicación, división, raíz cuadrada y potencia, respectivamente.
+
 3. **SonarQube**: Análisis estático del código para identificar posibles problemas y mejorar la calidad del código. 
 ![Imagen local](./img/sonar.png)
 4. **Deploy**: Asegúrate de que la práctica esté completa y que pase los tests en IntelliJ. Esto implica que has implementado todas las funcionalidades requeridas y que los tests unitarios asociados a la práctica se ejecutan correctamente en el entorno de desarrollo.
